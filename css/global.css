@@ -1,0 +1,144 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* Global Structure */
+body {
+	font: 12px/1.1 arial, helvetica, sans-serif;
+	background:#626262 url(../images/page_bg.jpg) left top repeat;
+}
+
+.lang-rtl {
+	direction: rtl;
+}
+
+.front #section-content {
+	background:#626262 url(../images/home_bg.jpg) center top repeat-x;
+}
+
+.not-front #zone-content-wrapper {
+	min-height: 600px;
+
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 13%, rgba(0,0,0,0.14) 29%, rgba(0,0,0,0.32) 54%, rgba(0,0,0,0.54) 79%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(13%,rgba(0,0,0,0.05)), color-stop(29%,rgba(0,0,0,0.14)), color-stop(54%,rgba(0,0,0,0.32)), color-stop(79%,rgba(0,0,0,0.54)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 13%,rgba(0,0,0,0.14) 29%,rgba(0,0,0,0.32) 54%,rgba(0,0,0,0.54) 79%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 13%,rgba(0,0,0,0.14) 29%,rgba(0,0,0,0.32) 54%,rgba(0,0,0,0.54) 79%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 13%,rgba(0,0,0,0.14) 29%,rgba(0,0,0,0.32) 54%,rgba(0,0,0,0.54) 79%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 13%,rgba(0,0,0,0.14) 29%,rgba(0,0,0,0.32) 54%,rgba(0,0,0,0.54) 79%,rgba(0,0,0,0.65) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
+.not-front .page {
+	background: url(../images/border_bg.jpg) left top repeat-x;
+	padding: 27px 0 0;
+}
+
+.not-front #section-header {
+	background: url(../images/header_bg.png) center top no-repeat;
+	padding: 0 0 27px;	
+	
+}
+
+.not-front #zone-menu-wrapper {
+	background: url(../images/border_bg.jpg) left bottom repeat-x;
+	padding: 0 0 27px;	
+}
+
+.node-type-page .region-content-inner {
+	background: url(../images/content_bg.jpg) left bottom repeat;
+}
+
+/* ************* Footer ******************** */
+
+#zone-postscript-wrapper {
+	background: url(../images/footer_bg.jpg) left top repeat-x;
+	padding: 22px 0 0;
+	height: 235px;
+}
+
+#region-postscript-fourth .block {
+	float: right;
+	margin-top:10px;	
+}
+
+#block-block-1 {
+	margin-left:20px;
+}
+
+
+/*Footer Menu*/
+ul li.leaf {
+	list-style-image: none;
+	list-style-type: none;
+}
+
+#block-menu-menu-footer-menu li {
+	float:left;
+	margin-left:20px;
+}
+
+#block-menu-menu-footer-menu ul.menu li.first {
+	margin-left:0px;
+}
+
+#block-menu-menu-footer-menu ul.menu li a {
+	font-size: 14px;
+	display:block;
+	color: white;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding-top:15px;
+	background: url(../images/nav_bg_sprite.png) center -62px no-repeat;
+}
+
+#block-menu-menu-footer-menu ul.menu li a.active {
+	background: url(../images/nav_bg_sprite.png) center top no-repeat;	
+}
+
+/*search*/
+#search-block-form {
+	background: url(../images/footer_sprite.png) 0 -53px no-repeat;
+	padding: 32px 30px 39px;
+	width: 167px;
+}
+
+#search-block-form .container-inline #edit-actions {
+	display:block;
+	background: url(../images/footer_sprite.png) -99px 0 no-repeat;
+	width: 125px;
+	border: 0 none;
+	text-indent: -99999px;
+	margin-top:3px;	
+}
+
+#edit-search-block-form--2 {
+	width: 167px;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 1px 1px 5px 0 #333 inset;
+	-moz-box-shadow: 1px 1px 5px 0 #333 inset;
+	box-shadow: 1px 1px 5px 0 #333 inset;
+}
+
+
+
+/*social media links*/
+.sm {
+	background-image: url(../images/footer_sprite.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 23px;
+	width: 23px;
+	margin-right: 15px;
+	text-indent: -99999px;
+	float:left;
+}
+
+.facebook-link {
+	background-position: 0 0;
+}
+
+.twitter-link {
+	background-position: -33px 0;
+}

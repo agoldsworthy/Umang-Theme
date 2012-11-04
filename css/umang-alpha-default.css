@@ -1,0 +1,88 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+/* ****************** Home **************** */
+.front .panels-flexible-region-8-left {
+	width: 25.1%;
+	position: relative;
+	z-index: 99;
+	min-height: 626px;
+	padding: 0 27px 0 27px;
+	
+	-webkit-box-shadow: 2px 0 4px 0 #292929;
+	-moz-box-shadow: 2px 0 4px 0 #292929;
+	box-shadow: 2px 0 4px 0 #292929;
+}
+
+.front .panels-flexible-region-8-center {
+	width: 39.2%;
+}
+
+.front .panels-flexible-region-8-right {
+	width: 26.7%;
+	padding-left: 2.2%;
+	position: relative;
+	z-index: 99;
+	min-height: 626px;
+	
+	-webkit-box-shadow: -2px 0 4px 0 #292929;
+	-moz-box-shadow: -2px 0 4px 0 #292929;
+	box-shadow: -2px 0 4px 0 #292929;
+}
+
+.front .panels-flexible-region-inside {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+.front #zone-content-wrapper {
+	height: 720px;
+}
+
+/*left column*/
+.pane-menu-menu-submit-entry a#home-submit, .pane-4 a#home-browse {
+	height: 38px;
+	width: 230px;
+	display:block;
+	line-height: 38px;
+	text-indent: -99999px;
+	text-decoration:none;
+	
+	background-image: url(../images/cta_sprite.png);
+	background-repeat: no-repeat;
+}
+
+.pane-menu-menu-submit-entry a#home-submit {
+	background-position:0 0;
+}
+
+.pane-4 a#home-browse {
+	background-position: 0 -62px;
+}
+
+/*center column*/
+.panel-separator {
+	margin: 0 !important;
+	padding: 0;
+}
+
+.pane-page-logo, .pane-frontpage-slideshow, .pane-custom.pane-1 {
+	padding: 27px 0 0;
+	background: url(../images/border_bg.jpg) top left repeat-x;
+}
+
+.pane-custom.pane-1 .pane-content {
+	padding: 0 0 27px;
+	background: url(../images/border_bg.jpg) bottom left repeat-x;
+	height: 136px;
+}
+
+.pane-frontpage-slideshow {
+	height: 215px;
+}
+
+.pane-page-logo {
+	padding: 37px 0 10px;
+}
+
+#logo {
+	margin: 0 97px;
+}
