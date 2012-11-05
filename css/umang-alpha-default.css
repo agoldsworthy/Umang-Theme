@@ -1,6 +1,10 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+#messages {
+display: none;
+}
+
 /* ****************** Home **************** */
-.front .panels-flexible-region-8-left {
+/*.front .panels-flexible-region-8-left {
 	width: 25.1%;
 	position: relative;
 	z-index: 99;
@@ -35,6 +39,22 @@
 
 .front #zone-content-wrapper {
 	height: 720px;
+}*/
+
+.front #zone-content-wrapper {
+	height: 720px;
+}
+
+.front .panels-flexible-region-8-left {
+	float: left;
+	width: 24.7575%;
+	margin-left: 73px;
+}
+
+.front .panels-flexible-region-8-center {
+	float: left;
+	width: 37%;
+	margin:22px 28px 0 0;
 }
 
 /*left column*/
@@ -64,14 +84,12 @@
 	padding: 0;
 }
 
-.pane-page-logo, .pane-frontpage-slideshow, .pane-custom.pane-1 {
+.front .pane-page-logo, .pane-frontpage-slideshow, .pane-custom.pane-1 {
 	padding: 27px 0 0;
-	background: url(../images/border_bg.jpg) top left repeat-x;
 }
 
 .pane-custom.pane-1 .pane-content {
 	padding: 0 0 27px;
-	background: url(../images/border_bg.jpg) bottom left repeat-x;
 	height: 136px;
 }
 
@@ -79,10 +97,164 @@
 	height: 215px;
 }
 
-.pane-page-logo {
+.front .pane-page-logo {
 	padding: 37px 0 10px;
 }
 
 #logo {
 	margin: 0 97px;
+}
+
+
+
+/* ************* Basic Page ******************** */
+
+.node-type-page .region-content-inner {
+	background: url(../images/content_bg.jpg) left bottom repeat;
+	padding: 10px 30px;
+}
+
+
+
+/* ************* Browse Page ******************** */
+.page-browse #section-content{
+	padding-top: 30px;
+}
+
+.view-id-browse_for_nodes table {
+	width: 100%;
+}
+
+.view-id-browse_for_nodes td {
+	overflow: hidden;
+	padding-bottom: 35px;
+}
+
+.view-id-browse_for_nodes .col-1 {
+	width: 47.5%;
+	padding-right: 4%;
+}
+
+/*list-item content*/
+.view-id-browse_for_nodes .views-field-field-image {
+	float: left;
+	margin-right: 15px;
+	-moz-box-shadow: 1px 1px 3px 0 #333;
+	-webkit-box-shadow: 1px 1px 3px 0 #333;
+	box-shadow: 1px 1px 3px 0 #333;
+	height: 110px;
+}
+
+.view-id-browse_for_nodes .views-row {
+	text-shadow:1px 1px 4px #333;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.view-id-browse_for_nodes .views-row-1 {
+	margin: 18px 0 10px;
+}
+
+.views-row-1 .views-field-field-poem-title {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.views-field-field-translations li {
+	list-style:none;
+	color: #fff;
+}
+
+.views-field-field-translations li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.view-browse-poem-fields .views-row-2 {
+	direction: rtl;
+	width: 66%;
+	text-align: right;
+}
+
+/*Search Form*/
+#browse-block-switcher {
+	width: 230px;
+	margin:20px 0 2px -70px;
+	overflow: hidden;
+}
+#browse-block-switcher .browse-switcher,#browse-block-switcher .browse-switcher.active {
+	color: #fff;
+	font-family: "georgia", serif;
+}
+
+#browse-switcher-english {
+	float: left;
+	font-size: 13px;
+}
+
+#browse-switcher-urdu {
+	float: right;
+	font-size: 13px;
+}
+
+.browse-block {
+	padding: 15px 21px;
+	background: #ccc url(../images/browse_form_bg.jpg) repeat-x 0 0;
+	border-top: 1px solid #8e8e8e;
+	color: #000;
+	width: 190px;
+	margin-left: -70px;
+}
+
+.browse-block-show-me {
+	text-transform: uppercase;
+	color: #999;
+	font-size: 14px;
+	margin: 5px 0 9px;
+	display: block;
+}
+
+.browse-block a {
+	color: #000;
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	padding: 6px 0;
+}
+
+.browse-block .active a {
+	font-weight: bold;
+}
+
+.browse-block .show-listing {
+	border-bottom: 1px solid #8e8e8e;
+} 
+
+.browse-block a span.show-count {
+	float: right;
+}
+
+#english-search-form, #urdu-search-form {
+	margin: 25px 0;
+}
+
+span.filter-form-title {
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.views-exposed-form select.form-select {
+	width: 195px;
+}
+
+.views-exposed-form .views-submit-button input[type="submit"]{
+	background: transparent url(../images/browse_search_button.png) no-repeat center 0;
+	width: 62px;
+	height: 30px;
+	border: 0 none;
+	text-indent: -9999999px;
+	
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius:2px;
 }
